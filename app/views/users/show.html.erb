@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @user.name %></h1>
+<ul id="friends-list">
+  <% @user.friends.each do |friend| %>
+    <% user = User.find(friend) %>
+    <li><%= link_to user.try(:slug), user_path(user) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

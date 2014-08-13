@@ -1,0 +1,23 @@
+development:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password:
+  database: contacts_development
+
+test:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password:
+  database: contacts_test
+
+production:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password:
+  database: contacts_prod
