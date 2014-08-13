@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1><%= @user.name %></h1>
+<p id="age"><%= @user.age %></p>
 <ul id="friends-list">
   <% @user.friends.each do |friend| %>
     <% user = User.find(friend) %>

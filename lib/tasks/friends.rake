@@ -11,6 +11,6 @@ task :create_users => :environment do
     friends = n_unique_rand
     name = Faker::Name.name
     puts "#{i} .. #{friends.join(', ') } -- #{name}"
-    user = User.create(name: name, friends: friends)
+    user = User.create(name: name, friends: friends, age: rand(20..99))
   end
 end
