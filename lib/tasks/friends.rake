@@ -1,5 +1,5 @@
 require 'faker'
-MAX_USERS = 100000
+MAX_USERS = 9000
 
 def n_unique_rand(max_friends=10, rand_upper_limit=MAX_USERS)
   number_to_generate = rand(1..max_friends)
